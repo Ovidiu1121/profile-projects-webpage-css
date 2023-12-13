@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.aside-container {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile {
+    grid-area: profile;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 10px;
+    padding: 0 40px;
+    padding-top: 20px;
+}
+
+.main {
+
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr 3fr;
+
+    grid-gap: 10px;
+    grid-template-areas: "profile aside"
+        "projects aside";
+
+}
+
+.card-image {
+    width: 30px;
+    height: 30px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+
+}
+
+.left-name {
+    color: rgb(44, 105, 218);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.left-pfp {
+    height: 100px;
+    width: 100px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.biography {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.biography-title,
+.biography-description {
+    margin: 0px;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 5px;
+    color: rgb(44, 105, 218);
+}
+
+.btn-underlined {
+    border-bottom: 3px solid rgb(44, 105, 218);
+}
+
+.biography-address {
+    margin-bottom: 10px;
+}
+
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.card4 {
+    grid-area: card4;
+}
+
+.card5 {
+    grid-area: card5;
+}
+
+
+.projects {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-gap: 15px;
+
+    grid-template-areas:
+        "card1 card2"
+        "card3 card4"
+        "card5 . ";
+
+}
+
+.card-date {
+    grid-area: date;
+    font-size: 12px;
+}
+
+.fa-solid {
+    grid-area: drop-down;
+    justify-self: end;
+}
+
+.card-title {
+    grid-area: title;
+    align-self: flex-end;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    grid-area: subtitle;
+}
+
+.card-image {
+    grid-area: image;
+}
+
+.card-process {
+    grid-area: process;
+    justify-self: end;
+    align-self: center;
+}
+
+.card {
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 3px #eaedf2;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas:
+        "date drop-down"
+        "title ."
+        "subtitle subtitle"
+        "image process";
+
+}
+
+.date1::marker,
+.process1 {
+    color: red;
+    background-color: rgb(253, 218, 218);
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.date4::marker,
+.process4 {
+    color: red;
+    background-color: rgb(253, 218, 218);
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.date2::marker,
+.process2 {
+    color: green;
+    background-color: rgb(232, 255, 198);
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.date5::marker,
+.process5 {
+    color: green;
+    background-color: rgb(232, 255, 198);
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.date3::marker,
+.process3 {
+    color: rgb(224, 146, 0);
+    background-color: rgb(255, 236, 199);
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.about {
+    border: 1px solid rgb(218, 218, 218);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.about-list {
+    padding-left: 17px;
+}
+
+hr {
+    border-color: rgb(255, 255, 255);
+}
+
+.about-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 13px;
+}
+
+.skill {
+    background-color: rgb(230, 230, 230);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.personal-details {
+    border: 1px solid rgb(218, 218, 218);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+table,
+th {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(215, 215, 215);
+}
+
+th:nth-of-type(1) {
+    width: 50%;
+}
+
+.pd {
+    font-weight: normal;
+}
+
+.we-date1 {
+    grid-area: date1;
+}
+
+.we-company1 {
+    grid-area: company1;
+}
+
+.we-company2 {
+    grid-area: company2;
+}
+
+.we-date2 {
+    grid-area: date2;
+}
+
+.we-job1 {
+    grid-area: job1;
+}
+
+.we-job2 {
+    grid-area: job2;
+}
+
+.we-description1 {
+    grid-area: desc1;
+}
+
+.we-description2 {
+    grid-area: desc2;
+}
+
+.we-title {
+    grid-area: we-title;
+}
+
+.work-experience {
+
+    border: 1px solid rgb(218, 218, 218);
+    padding: 10px;
+    border-radius: 10px;
+
+    display: grid;
+
+    grid-template-columns: 0.5fr 2.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+
+    grid-template-areas:
+        " we-title  we-title"
+        "date1 company1"
+        ". job1"
+        ". desc1"
+        "date2 company2"
+        ". job2"
+        ". desc2";
+}
+
+.we-item {
+    font-size: 13px;
+}
